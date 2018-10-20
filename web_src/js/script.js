@@ -13,7 +13,16 @@ var data = [
     [30.011346,31.287348,30.010275,31.286953,'yellow'],
     [30.012621,31.289707,30.010886,31.290185,'red'],
     [30.013573,31.287538,30.01423,31.287773,'red'],
-    [30.014086,31.287568,30.014499,31.286058,'yellow']
+    [30.014086,31.287568,30.014499,31.286058,'yellow'],
+    [30.014013,31.285793,30.014913,31.286164,'red'],
+    [30.014348,31.284791,30.015367,31.285391,'green'],
+    [30.012805,31.290633,30.013547,31.290018,'yellow'],
+    [30.013632,31.289889,30.014276,31.287864,'yellow'],
+    [30.014276,31.287864,30.014598,31.286923,'red'],
+    [30.014598,31.286923,30.015472,31.285444,'green']
+    [0.015472,31.285444,30.016273,31.284169,'green'],
+    [30.012593,31.289692,30.011255,31.290056,'yellow'],
+    [30.011255,31.290056,30.010107,31.290363,'red']
 ]
 /**
 * Adds a polyline between Dublin, London, Paris and Berlin to the map
@@ -58,11 +67,11 @@ var defaultLayers = platform.createDefaultLayers({
     ppi: pixelRatio === 1 ? undefined : 320
 });
 
-//Step 2: initialize a map - this map is centered over Europe
+//Step 2: initialize a map - this map is centered over Mokattam,Cairo
 var map = new H.Map(document.getElementById('map'),
 defaultLayers.normal.map,{
     center: {lat:30.013, lng:31.28},
-    zoom: 15,
+    zoom: 16,
     pixelRatio: pixelRatio
 });
 
