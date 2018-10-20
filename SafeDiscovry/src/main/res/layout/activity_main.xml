@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:id="@+id/speedOfVibration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Speed of vibration : 0"/>
+
+    <TextView
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:id="@+id/routeState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/speedOfVibration"
+        android:text="Stable Route"/>
+
+    <TextView
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:id="@+id/lastVibrationSpeed"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/routeState"
+        android:text="Last Vibration Speed : 0"/>
+
+    <TextView
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:id="@+id/vibrationsCounter"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastVibrationSpeed"
+        android:text="Vibrations Counter : 0"/>
+
+    <Button
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:id="@+id/Start"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vibrationsCounter"
+        android:text="Start Session"/>
+
+</RelativeLayout>
